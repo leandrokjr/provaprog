@@ -7,7 +7,7 @@ class App {
         this.middlewares();
         this.routes();
 
-        const dbinfo = 'mongodb+srv://user:<password>@xxxxx.zzzzz.mongodb.net/CarExample?retryWrites=true&w=majority';
+        const dbinfo = 'mongodb+srv://leandrokjrdias:dI0PF6liwbrzWHOf@cluster0.qiozdd3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
         mongoose.connect(dbinfo,
             {
             useNewUrlParser: true,
@@ -24,5 +24,5 @@ class App {
         this.server.use(router);
     }
 }
-
+//dI0PF6liwbrzWHOf
 export default new App().server;
